@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: capitalize;
+    color: #333 ;
+    font-family: 'Dancing Script', cursive;
+}
+p{
+    font-size: 16px !important;
+    color: #777 !important;
+    line-height: 1.8 !important;
+    text-transform: capitalize;
+}
+/*-----------------------------------------------------------------*/
+/* Start Nav*/
+nav{
+    
+}
+nav .nav-item .nav-link{
+    transition: color .5s , margin-left .5s;
+    padding: 15px !important;
+    font-size: 18px;
+    position: relative;
+    color: #ffffff !important;
+    font-family: 'Dancing Script', cursive;
+}
+nav .nav-item .nav-link::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    
+    bottom: -5px;
+    left: 0;
+    background-color: #024b41;
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 1s ;
+}
+nav .nav-item .nav-link:hover{
+    color: #024b41 !important;
+    margin-left: 5px;
+}
+nav .nav-item:hover ::before{
+    transform: scale(1);
+    
+}
+nav .logo{
+    font-family: 'Dancing Script', cursive;
+    transition: color .5s;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav .logo:hover{
+    color: #024b41 !important;
+}
+/* End Nav*/
+/*-----------------------------------------------------------------*/
+/* Start Header*/
+
+.carousel{
+    height: 625px !important;
+    position: relative;
+}
+header .carousel{
+    position: relative;
+}
+header .carousel .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(1, 21, 87, 0.637) !important;
+}
+header .carousel .desc{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px !important;
+}
+header .carousel .desc h3{
+    color: #024b41 !important;
+    position: relative;
+    animation: anime 1s;
+    transition: color .5s;
+}
+header .carousel .desc h3:hover{
+    color: #fff !important;
+}
+header .carousel .desc h1{
+    color: #fff !important;
+    font-size: 80px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    position: relative;
+    animation: anime 1.5s;
+    font-family: 'Dancing Script', cursive !important;
+}
+header .carousel .desc .colors{
+    color: #024b41 !important;
+}
+header .carousel .desc p{
+    color: #fff!important;
+    font-size: 18px;
+    position: relative;
+    animation: anime 2s;
+}
+/*------------- Start Btn ------------*/
+header .carousel .desc .btn{
+    border-color: #024b41 !important;
+    color: #024b41 !important;
+    padding: 10px 15px !important;
+    transition: background-color .5s,color .5s;
+    text-transform: uppercase;
+    position: relative;
+    animation: anime 2.5s;
+}
+header .carousel .desc .btn:first-of-type{
+    background-color: #024b41 !important;
+    color: #fff !important;
+    font-family: 'Dancing Script', cursive;
+}
+header .carousel .desc .btn:first-of-type:hover{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+header .carousel .desc .btn:last-of-type{
+    font-family: 'Dancing Script', cursive;
+}
+header .carousel .desc .btn:last-of-type:hover{
+    background-color: #024b41 !important;
+    color: #fff !important;
+}
+/*------------- End Btn ------------*/
+/*------------- Start KeyFrames ------------*/
+@keyframes anime{
+    0%{
+        bottom: -400px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+/*------------- End KeyFrames ------------*/
+
+/* End Header*/
+/*-----------------------------------------------------------------*/
+/* Start Section One*/
+.section1{
+    cursor: pointer;
+    background-color:#f4f4f4;
+}
+#searchbtn{
+    transition: background-color .5s;
+}
+#searchbtn:hover{
+    background-color: #024b41 !important;
+}
+.section1 .cont-img{
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+.section1 .cont-img img{
+    width: 100%;
+    height: 100%;
+}
+.section1 .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s,background-color .5s;
+}
+.section1 .opacity:hover{
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 1;
+}
+.section1 a{
+    color: #024b41;
+    text-decoration: none;
+    transition: margin-left .5s , color .5s;
+    font-weight: bold;
+}
+.section1 a:hover{
+    margin-left: 5px;
+    color: #c8884d;
+}
+/* containerImage */
+#containerImage{
+    width: 800px;
+    height: 500px;
+    background-color:#024b41;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+#containerImage h3{
+    transition: transform .5s, color .5s;
+}
+#containerImage h3:hover{
+    transform: translateX(5px);
+    color: #c8884d;
+}
+#containerImage a{
+    color:#fff;
+    font-family: 'Dancing Script', cursive;
+    transition: color .5s ,margin-left .5s;
+    font-size: 20px;
+}
+#containerImage p{
+    color: #777 !important;
+}
+#containerImage a:hover{
+    color: #c8884d;
+}
+/* Icons Of Close*/
+.icons i{
+    color:#fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: color .5s;
+    cursor: pointer;
+    z-index: 3;
+}
+.icons i:hover{
+    color: #c8884d;
+}
+/* Content Of Container Image*/
+.body .h3 {
+    color: #fff ;
+    margin-top: 30px;
+}
+.lists,.conts{
+    padding: 50px 25px 20px;
+}
+/* End Section One*/
+/*-----------------------------------------------------------------*/
+/* Start Section Two*/
+.section2 h3{
+    transition: color .5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+.section2 h3:hover{
+    color: #024b41 !important;
+}
+.section2 a{
+    font-size: 16px !important;
+    color: #024b41 !important;
+    text-transform: capitalize;
+    transition: color .5s ,margin-left .5s;
+    font-family: 'Dancing Script', cursive;
+}
+.section2 a:hover{
+    color: #8e7754 !important;
+    margin-left: 5px;
+}
+.section2 .hover-im img{
+    transition: transform .5s;
+}
+.section2 .hover-im:hover img{
+    transform: scale(1.1);
+}
+/* End Section Two*/
+/*-----------------------------------------------------------------*/
+/* Start Section Three*/
+.section3 h1{
+    transition: color .5s;
+    cursor: pointer;
+}
+.section3 h3{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 0 !important;
+    margin: 15px 0 !important;
+    font-family: 'Dancing Script', cursive;
+    transition: color .5s;
+    cursor: pointer;
+}
+.section3 h3:hover ,.section3 h1:hover{
+    color: #024b41 !important;
+}
+.section3 p{
+    font-size: 16px !important;
+}
+/* End Section Three*/
+/*-----------------------------------------------------------------*/
+/* Start Section Four*/
+.section4{
+    background-image: url(../img/section-3.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, .5);
+}
+/* End Section Four*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/* Start Section Five*/
+.section5{
+    background-color: #024b41 !important;
+    cursor: pointer;
+}
+.section5 .icon{
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+.section5 .icon i{
+    color: rgb(187, 181, 181);
+    transition: color .5s ,transform .7s;
+}
+.section5 .icon:hover i{
+    transform: scale(1.2);
+    color: #c8884d !important;
+}
+.section5 h3{
+    font-size: 40px;
+    color: #fff !important;
+    font-family: 'Dancing Script', cursive;
+}
+.section5 p{
+    font-size: 24px !important;
+    color: rgb(216, 212, 212) !important;
+}
+/* End Section Five*/
+/*-----------------------------------------------------------------*/
+/* Start Section Six*/
+.section6{
+    height: 600px !important;
+    overflow: hidden;
+}
+.section6 .card{
+    border: 0 !important;
+}
+.section6 .cont-img{
+    position: relative;
+    height: 180px;
+}
+.section6 .cont-img img{
+    height: 100%;
+}
+.section6 .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s,background-color .5s;
+}
+.section6 .opacity:hover{
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 1;
+}
+.section6 .card-body a{
+    border: none;
+    outline: none;
+    transition: color .5s,margin-left .5s;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    font-weight: bold;
+}
+.section6 .card-body a:hover{
+    color: #024b41 !important;
+    margin-left: 5px;
+}
+/* End Section Six*/
+/*-----------------------------------------------------------------*/
+/* Start Section Sven*/
+.section7{
+    background-color: #024b41 !important;
+}
+.section7 h1{
+    color: #fff !important;
+    font-family: 'Dancing Script', cursive;
+}
+.section7 p{
+    font-size: 18px !important;
+    color: #fff !important;
+}
+.section7 a{
+    transition: color .5s;
+    background-color: #fff;
+    font-family: 'Dancing Script', cursive;
+    color: #024b41 !important;
+    border-radius: 10px;
+    font-size: 26px;
+}
+.section7 a:hover{
+    color: #8e7754 !important;
+}
+/* End Section Sven*/
+/*-----------------------------------------------------------------*/
+/* Start Footer*/
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: #90ebdf91;
+}
+footer a{
+    text-transform: uppercase;
+    font-size: 28px !important;
+    color: #024b41;
+    transition: color .5s;
+    font-family: 'Dancing Script', cursive;
+}
+footer p{
+    font-family: 'Dancing Script', cursive;
+}
+footer a:hover{
+    color: #8e7754 !important;
+}
+/* End Footer*/
+/*-----------------------------------------------------------------*/
+
+#navbars
+{
+    transition: 1s;
+}

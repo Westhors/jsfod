@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    transition: color .5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333 ;
+    font-family: 'Dancing Script', cursive !important;
+}
+p{
+    font-size: 16px !important;
+    color: #777 !important;
+    line-height: 2 !important;
+    text-transform: capitalize;
+}
+/*-----------------------------------------------------------------*/
+/* Start Nav*/
+nav{
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+nav .logo{
+    font-family: 'Dancing Script', cursive;
+    transition: color .5s;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav .logo:hover{
+    color: #024b41 !important;
+}
+nav .nav-item .nav-link{
+    transition: color .5s , margin-left .5s;
+    padding: 15px !important;
+    font-size: 16px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+}
+nav .nav-item .nav-link::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #024b41;
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 1s ;
+}
+nav .nav-item .nav-link:hover{
+    color: #024b41 !important;
+    margin-left: 5px;
+}
+nav .nav-item:hover ::before{
+    transform: scale(1);
+}
+/* End Nav*/
+/*-----------------------------------------------------------------*/
+/* Start Section Contact*/
+.contact{
+    background-color: #024b41;
+    margin-top: 70px !important;
+}
+.contact h2{
+    font-size: 18px;
+    color: #fff;
+}
+.contact form input{
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #666;
+    font-family: 'Dancing Script', cursive;
+}
+textarea{
+    outline: none;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+.contact form input:nth-of-type(4){
+    transition: background-color .5s ,color .5s;
+}
+.contact form input:nth-of-type(4):hover{
+    background-color:#024b41;
+    color: #fff !important;
+}
+.contact-list ul{
+    font-size: 18px;
+    list-style: none;
+    cursor: pointer;
+}
+.contact-list ul li{
+    padding: 10px 0;
+    transition: color .5s, margin-left .5s;
+}
+.contact-list ul li:hover{
+    color: #8e7754 !important;
+    margin-left: 5px;
+}
+/* End Section Contact*/
+/*-----------------------------------------------------------------*/
+/* Start Footer*/
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: #90ebdf91;
+}
+footer a{
+    text-transform: uppercase;
+    font-size: 28px !important;
+    color: #777;
+    transition: color .5s;
+    font-family: 'Dancing Script', cursive;
+}
+footer p{
+    font-family: 'Dancing Script', cursive;
+}
+footer a:hover{
+    color: #024b41 !important;
+}
+/* End Footer*/
+/*-----------------------------------------------------------------*/
